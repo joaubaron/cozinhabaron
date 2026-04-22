@@ -1,10 +1,12 @@
-const CACHE_NAME = 'cozinha-baron-v2';
+const CACHE_VERSION = '1.0';
+const CACHE_NAME = `cozinha-baron-${CACHE_VERSION}`;
 const ASSETS = [
   '/cozinhabaron/',
   '/cozinhabaron/index.html',
   '/cozinhabaron/manifest.json',
   '/cozinhabaron/icon-192.png',
-  '/cozinhabaron/icon-512.png'
+  '/cozinhabaron/icon-512.png',
+  '/cozinhabaron/logo.png'
 ];
 
 self.addEventListener('install', e => {
@@ -20,7 +22,6 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
-  // Só intercepta requests do mesmo domínio (não bloqueia links externos)
   if (!e.request.url.startsWith(self.location.origin)) return;
   e.respondWith(
     caches.match(e.request).then(cached => cached || fetch(e.request))
