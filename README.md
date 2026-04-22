@@ -1,4 +1,4 @@
-# 🍽️ Cozinha Baron
+# Cozinha Baron
 
 PWA de landing page para o blog [Cozinha Baron](https://cozinhabaron.blogspot.com/search/label/Jantar%20a%20dois) — receitas caseiras com sabor.
 
