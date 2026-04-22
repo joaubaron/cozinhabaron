@@ -5,8 +5,8 @@
   "start_url": "/cozinhabaron/",
   "scope": "/cozinhabaron/",
   "display": "standalone",
-  "background_color": "#f5ede3",
-  "theme_color": "#c45e3c",
+  "background_color": "#eddcd1",
+  "theme_color": "#eddcd1",
   "orientation": "portrait-primary",
   "icons": [
     {
